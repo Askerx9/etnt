@@ -8,6 +8,17 @@ footer .container {
   @include flex($align: flex-start);
   padding: space(12) 0 space(10);
   position: relative;
+
+  @include down(1050){
+    flex-wrap: wrap;
+    //flex-direction: column;
+  }
+}
+
+footer .container > *{
+  @include down(1050){
+    margin-bottom: space(3);
+  }
 }
 
 footer small {
@@ -28,7 +39,9 @@ footer .container > p {
   width: 50px;
   height: 50px;
   background: $primaryColor;
-  cursor: pointer
+  cursor: pointer;
+  @include replace-text(url(../../images/up-arrow.svg))
+  background-size: 50%;
 }
 
 .footer__logo {
