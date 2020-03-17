@@ -1,0 +1,32 @@
+.scroll {
+  width: 25px;
+  height: 40px;
+  border: 2px solid $white;
+  border-radius: 20px;
+  position: absolute;
+  @extend %left-center;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.scroll:after{
+  content: '';
+  width: 2px;
+  height: 50%;
+  border-radius: 2px;
+  display: block;
+  background: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(.0);
+  transform-origin: 50% 0%;
+  animation: scroll 2s .5s ease-in-out infinite;
+}
+
+@keyframes scroll {
+  0% {transform-origin: 50% 0%; transform: translate(-50%, -50%) scale(.0);}
+  40% {transform-origin: 50% 0%; transform: translate(-50%, -50%) scale(1);}
+  60% {transform-origin: 50% 100%; transform: translate(-50%, -50%) scale(1);}
+  90% {transform-origin: 50% 100%; transform: translate(-50%, -50%) scale(.0);}
+}

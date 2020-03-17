@@ -1,0 +1,33 @@
+.nav {
+  @extend .container;
+  @include flex();
+  @extend %left-center;
+  position: absolute;
+  z-index: 1000;
+  color: $white;
+  height: 150px;
+  text-transform: uppercase;
+}
+
+.nav img {
+    width: 200px;
+}
+
+.nav__el {
+    display: inline-block;
+    padding: 0 space(3);
+    letter-spacing: 0.15em;
+    position: relative;
+    border-right: solid 2px currentColor;
+
+    &:last-child{
+        border-right: none;
+    }
+}
+
+.nav__el a{
+    transition: 0.2s;
+    &:hover{
+        color: $primaryColor;
+    }
+}

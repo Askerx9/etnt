@@ -1,0 +1,52 @@
+.title {
+  font-size: em(70, 15);
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: space(3);
+}
+
+.title span {
+  display: block;
+  font-weight: 400;
+}
+
+.title + p {
+  text-align: center;
+  color: $white;
+  font-size: em(22, 15);
+}
+
+.section_title {
+  text-align: right;
+  @include flex($direction: column, $align: flex-end);
+  display: inline-flex;
+
+  h2 {
+    font-size: em(70, 15);
+    color: $secondaryColor;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    &:before {
+      content: "";
+      background: url("../../images/title_logo.svg") no-repeat center;
+      position: absolute;
+      opacity: 0.05;
+      width: 180px;
+      height: 239px;
+      left:-60px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  p {
+    font-size: em(30, 15);
+    color: $primaryColor;
+    text-transform: lowercase;
+    font-weight: 300;
+    margin-top: space(-2);
+    margin-bottom: space(5);
+  }
+}

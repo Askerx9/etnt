@@ -1,0 +1,80 @@
+footer {
+  background: $contrast;
+  border-top: 5px solid $primaryColor;
+  color: $white;
+}
+
+footer .container {
+  @include flex($align: flex-start);
+  padding: space(12) 0 space(10);
+  position: relative;
+}
+
+footer small {
+  padding: space(3) 0;
+  display: block;
+  text-align: center;
+  background: lighten($contrast, $amount: 10);
+}
+
+footer .container > p {
+  width: 346px
+}
+
+.footer__return-to-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: $primaryColor;
+  cursor: pointer
+}
+
+.footer__logo {
+  width: 210px;
+}
+
+.footer__nav {
+  border-left: 3px solid $primaryColor;
+  padding-left: space(2);
+}
+
+.footer__nav a {
+  text-transform: uppercase;
+  padding: space(1) 0;
+  display: block;
+  transition: color .15s ease-in-out;
+
+  &:hover{
+    color: $primaryColor;
+  }
+}
+
+.footer__nav li:first-child a{
+  padding-top: 0;
+}
+.footer__nav li:last-child a{
+  padding-bottom: 0;
+}
+
+footer .social {
+  @include flex()
+}
+
+footer .social__el {
+  margin-right: space(2);
+}
+
+.social__el a{
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.social__el--fb a{
+  @include replace-text(url(../../images/facebook.svg))
+}
+.social__el--in a{
+  @include replace-text(url(../../images/linkedin.svg))
+}
