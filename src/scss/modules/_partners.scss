@@ -1,0 +1,20 @@
+.partners {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: space(10);
+}
+
+.partners img {
+  width: 250px;
+  margin: space(2) space(9);
+  filter: grayscale(100%);
+  opacity: .5;
+  transition: filter .15s ease-in-out, opacity .15s ease-in-out;
+}
+
+.partners img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}

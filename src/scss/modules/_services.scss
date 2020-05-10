@@ -1,0 +1,32 @@
+.services{
+  padding: space(8) 0 space(20);
+}
+
+.services__list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services__el {
+  padding-top: space(13);
+  flex-basis: 30%;
+  text-align: center;
+  margin-bottom: space(4);
+  @include down(768) {
+    flex-basis: 100%;
+  }
+}
+
+.children__el{
+  color: #08295F;
+  padding: space(2) 0;
+  margin-bottom: space(1);
+  background: #fff;
+  position: relative;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
+}
+
+.children__el:last-child{
+  box-shadow: none;
+}

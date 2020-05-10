@@ -1,0 +1,25 @@
+.card {
+  //min-width: 300px;
+  padding: 30px 20px;
+  background: white;
+  box-shadow: 0px 0px 16px rgba($color: #000000, $alpha: 0.15);
+  position: relative;
+
+}
+
+.card::before{
+  content: "";
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  background: rgb(91,98,140);
+  background: linear-gradient(90deg, rgba(91,98,140,1) 27%, rgba(0,212,255,1) 100%);
+  top: 0px;
+  left: 0px;
+}
+
+.card .bold {
+  color: $primaryColor;
+  font-size: 1.8em;
+  margin-bottom: .6em;
+}

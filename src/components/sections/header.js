@@ -20,7 +20,7 @@ const SectionHeader = () => {
 
       <Scroll />
 
-      <video class="background-video" loop playsinline autoPlay muted>
+      <video className="background-video" loop playsInline autoPlay muted>
         {/* <source src={Bgwebm} type="video/webm" /> */}
         <source src={Bgmp4} type="video/mp4" />
         <p>Votre navigateur ne prend pas en charge les vidéos HTML5.

@@ -1,0 +1,37 @@
+.digit {
+  background: $contrast url(../../images/digit_bg.png) no-repeat center right;
+  padding: space(8) 0;
+  text-align: center;
+}
+
+.digit h2 {
+  color: $white;
+  opacity: .4;
+  font-size: em(70, 15);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: space(5);
+}
+
+.digit ul{
+  @include flex();
+  @extend .container;
+  flex-wrap: wrap;
+}
+
+.digit__el{
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.digit__img{
+  height: 80px;
+  margin-bottom: space(2);
+}
+
+.digit__number{
+  color: $primaryColor;
+  font-size: em(48);
+  font-weight: bold;
+}

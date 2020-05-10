@@ -6,23 +6,23 @@ module.exports = {
     menuLinks: [
       {
         name: "Presentation",
-        link: "/",
+        link: "#presentation",
       },
       {
         name: "Services",
-        link: "/",
+        link: "#services",
       },
       {
         name: "Competences",
-        link: "/",
+        link: "#skills",
       },
       {
         name: "Chiffres",
-        link: "/",
+        link: "#digit",
       },
       {
         name: "Contact",
-        link: "/",
+        link: "#contact",
       },
     ],
   },

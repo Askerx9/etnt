@@ -1,0 +1,16 @@
+.contact{
+  padding: space(15) 0;
+  background:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%),  url("../../images/map.png") no-repeat center right;
+  background-size: auto 150% ;
+}
+
+.info__el {
+  border-left: 2px solid $primaryColor;
+  padding-left: space(2);
+  margin-bottom: space(3);
+}
+
+.info__el p{
+  font-size: em(24);
+  color: #757575;
+}

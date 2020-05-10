@@ -1,0 +1,28 @@
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills__el {
+  flex-basis: 28%;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include down(768) {
+    flex-basis: 100%;
+  }
+
+}
+
+//.skills__el > * {
+//  flex-basis: 50%;
+//}
+
+
+.skills__el img{
+  margin: 0 10px;
+  width: 30%
+}
