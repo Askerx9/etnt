@@ -15,21 +15,21 @@ import Spie from "../../images/partners/Logo-Spie.png"
 const Partners = () => {
 
     const partners = [
-        {img: circet ,link: "https://www.circet.fr/"},
-        {img: Constructel ,link:"https://constructel.net/fr/home"},
-        {img: Spie ,link:"https://www.spie.be/fr"},
-        {img: Axians ,link:"https://www.axians.be/en/"},
-        {img: Engie ,link:"https://www.engie.be"},
-        {img: Scopelec ,link:"https://www.groupe-scopelec.com/"},
-        {img: Eiffage ,link:"https://www.eiffage.com/"},
+        {name:"Circet" ,img: circet ,link: "https://www.circet.fr/"},
+        {name:"Constructel" ,img: Constructel ,link:"https://constructel.net/fr/home"},
+        {name:"Spie" ,img: Spie ,link:"https://www.spie.be/fr"},
+        {name:"Axians" ,img: Axians ,link:"https://www.axians.be/en/"},
+        {name:"Engie" ,img: Engie ,link:"https://www.engie.be"},
+        {name:"Scopelec" ,img: Scopelec ,link:"https://www.groupe-scopelec.com/"},
+        {name:"Eiffage" ,img: Eiffage ,link:"https://www.eiffage.com/"},
     ]
 
     const partnersElements = partners.map((element, index) => {
         return (
-            <a href={element.link} target = "_BLANK">
+            <a href={element.link} key={index} target = "_BLANK" rel="noopener noreferrer">
                 <img
                     src={element.img}
-                    key = {index}
+                    alt={element.name}
                 />
             </a>
         )

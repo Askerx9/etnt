@@ -1,0 +1,44 @@
+.dot-label {
+  color: $primaryColor;
+  font-size: 1.2em;
+}
+
+.dot-label span {
+  width: 20px !important;
+  height: 20px !important;
+  bottom: -9px !important;
+  transform: translateX(-4px);
+}
+
+.dot-label.present{
+  color: $contrast;
+}
+
+.dot-label.present span {
+  background: $contrast !important;
+  border-color: #fff !important;
+  width: 30px !important;
+  height: 30px !important;
+  bottom: -14px !important;
+  transform: translateX(-10px);
+}
+.timeline{
+  padding: space(4) 0 space(12);
+}
+
+.timeline h3, .timeline p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline h3 {
+  color: $contrast;
+  font-size: 1.4em;
+  margin-bottom: .4em;
+  margin-top: space(3);
+  //font-weight: 700;
+}
+
+.timeline p {
+  color: #767676;
+}

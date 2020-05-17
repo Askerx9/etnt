@@ -3,9 +3,31 @@ import React from 'react'
 
 // Assets
 import Logo from "../../images/logo.svg"
+import {graphql, useStaticQuery} from "gatsby";
 
 
 const Footer = () => {
+
+  const data = useStaticQuery(graphql`
+    query siteQueryAndSiteQuery {
+      site {
+        siteMetadata {
+          menuLinks {
+            name
+            link
+          }
+        }
+      }
+    }
+  `)
+
+  const menuLinks = data.site.siteMetadata.menuLinks.map((link, index) => (
+      <li key={`${index}-link.name`}>
+        <a href={link.link}>
+          {link.name}
+        </a>
+      </li>
+  ))
 
   return (
     <footer>
@@ -14,11 +36,7 @@ const Footer = () => {
         <img className={'footer__logo'} src={Logo} alt="Etnt" />
 
         <ul className={'footer__nav'}>
-          <li><a href="#">Link Test</a></li>
-          <li><a href="#">Link Test</a></li>
-          <li><a href="#">Link Test</a></li>
-          <li><a href="#">Link Test</a></li>
-          <li><a href="#">Link Test</a></li>
+          { menuLinks }
         </ul>
 
         <p>

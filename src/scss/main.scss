@@ -56,6 +56,10 @@ body {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 .colored {
   color: $primaryColor;
 }
@@ -83,6 +87,7 @@ body {
 @import "modules/_skills";
 @import "modules/_partners";
 @import "modules/_services";
+@import "modules/_timeline";
 
 
 // Pages

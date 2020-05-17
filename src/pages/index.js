@@ -11,12 +11,14 @@ import Contact from "../components/sections/contact"
 import Skills from "../components/sections/skills"
 import Partners from "../components/sections/partners";
 import Services from "../components/sections/services";
+import Timeline from "../components/sections/timeline";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <SectionHeader />
     <Presentation />
+    <Timeline />
     <Services />
     <Skills />
     <Digit />
