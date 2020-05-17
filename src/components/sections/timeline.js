@@ -20,7 +20,7 @@ const Timeline = () => {
     ]
     const dates = values.map(el => el.date)
 
-    const [index, setIndex] = useState(0);
+    const [dataIndex, setdataIndex] = useState(values.length - 1);
     const [previous, setPrevious] = useState(0);
     const timelineRef = useRef()
 
@@ -33,10 +33,10 @@ const Timeline = () => {
             <div>
                 <div style={{ width: '100%', height: '100px', margin: '0 auto' }}>
                     <HorizontalTimeline
-                        index={index}
+                        index={dataIndex}
                         indexClick={(index) => {
-                            setIndex(index)
-                            setPrevious(index)
+                            setdataIndex(index)
+                            setPrevious(dataIndex)
                         }}
                         getLabel={date => date.slice(0, 4)}
                         values={ dates }
@@ -49,8 +49,8 @@ const Timeline = () => {
                 </div>
 
                 <div className='text-center'>
-                    <h3>{values[index].title}</h3>
-                    <p>{values[index].text}</p>
+                    <h3>{values[dataIndex].title}</h3>
+                    <p>{values[dataIndex].text}</p>
                 </div>
 
             </div>
