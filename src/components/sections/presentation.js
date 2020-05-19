@@ -1,4 +1,5 @@
 import React from "react"
+import ParticlesBackground from "../modules/particlesBackground";
 
 const presentation = () => {
   return (
@@ -35,6 +36,7 @@ const presentation = () => {
           </p>
         </div>
       </div>
+      <ParticlesBackground/>
     </section>
   )
 }
