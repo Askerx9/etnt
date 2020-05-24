@@ -38,7 +38,7 @@ const Skills = () => {
         <section className="skills" id={"skills"}>
           <div className="container">
             <div className={"section_title"}>
-              <h2>Compétences</h2>
+              <h2>Nos Compétences</h2>
             </div>
 
             <ul>

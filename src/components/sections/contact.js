@@ -1,4 +1,5 @@
 import React from 'react'
+import ParticlesBackground from "../modules/particlesBackground";
 
 
 // Assets
@@ -34,6 +35,8 @@ const Contact = () => {
               </li>
             </ul>
           </div>
+          <ParticlesBackground/>
+
         </section>
     )
 }

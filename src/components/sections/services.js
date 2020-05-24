@@ -1,4 +1,5 @@
 import React from 'react'
+import ParticlesBackground from "../modules/particlesBackground";
 
 
 // Assets
@@ -65,6 +66,7 @@ const Services = () => {
               {card}
             </ul>
           </div>
+            <ParticlesBackground/>
         </section>
     )
 }

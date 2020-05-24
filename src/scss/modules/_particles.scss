@@ -5,4 +5,7 @@
   max-width: 600px;
   height: 100%;
   z-index: -1;
+  @include down(678px) {
+    opacity: .4;
+  }
 }

@@ -9,6 +9,7 @@ import Eiffage from "../../images/partners/Logo-Eiffage.png"
 import Engie from "../../images/partners/Logo-Engie.png"
 import Scopelec from "../../images/partners/Logo-Scopelec.png"
 import Spie from "../../images/partners/Logo-Spie.png"
+import ParticlesBackground from "../modules/particlesBackground";
 
 
 

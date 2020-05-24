@@ -1,4 +1,13 @@
+.services{
+  position: relative;
+}
 
+.services .particles{
+  right: inherit;
+  left: -50px;
+  bottom: -250px;
+  top: inherit;
+}
 
 .services__list{
   display: flex;
