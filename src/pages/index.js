@@ -16,7 +16,7 @@ import Timeline from "../components/sections/timeline";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <SectionHeader />
+    {/*<SectionHeader />*/}
     <Presentation />
     <Timeline />
     <Services />

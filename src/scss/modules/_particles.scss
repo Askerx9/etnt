@@ -1,7 +1,8 @@
 .particles {
   position: absolute;
   top: 0;
-  right: -100px;
+  right: -50px;
   max-width: 600px;
   height: 100%;
+  z-index: -1;
 }

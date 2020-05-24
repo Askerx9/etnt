@@ -1,5 +1,9 @@
+section {
+  padding: space(5) 0 space(5);
+}
+
 .section__header{
-  @include flex($direction: column, $justify: center);
+  @include flex($direction: column, $justify: space-around );
   min-height: 100vh;
   overflow: hidden;
   position: relative;
@@ -8,14 +12,19 @@
 
 .section__presentation{
   font-size: em(16, 15);
-  padding: 128px 0;
+  //padding: 128px 0;
   position: relative;
   overflow: hidden;
 }
 
 .section__presentation_content {
   width: 35%;
-  p {
-    margin-bottom: space(2);
+
+  @include down(678px) {
+    width: 100%;
   }
+
+}
+.section__presentation_content p {
+    margin-bottom: space(2);
 }

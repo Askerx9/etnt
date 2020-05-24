@@ -1,6 +1,7 @@
 .digit {
   background: $contrast url(../../images/digit_bg.png) no-repeat center right;
-  padding: space(8) 0;
+  background-size: cover;
+  //padding: space(8) 0;
   text-align: center;
 }
 
@@ -17,21 +18,30 @@
   @include flex();
   @extend .container;
   flex-wrap: wrap;
+  @include down(678px) {
+    flex-direction: column;
+  }
 }
 
 .digit__el{
   color: $white;
   text-align: center;
   text-transform: uppercase;
+  @include down(678px) {
+    margin-bottom: space(3);
+  }
 }
 
 .digit__img{
   height: 80px;
   margin-bottom: space(2);
+  @include down(678px) {
+    height: 60px;
+  }
 }
 
 .digit__number{
   color: $primaryColor;
-  font-size: em(48);
+  font-size: em(54);
   font-weight: bold;
 }

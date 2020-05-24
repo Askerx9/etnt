@@ -9,30 +9,29 @@ import Studies from '../../images/digits/studies.svg'
 
 const Digit = () => {
 
+    const data = [
+        {icon: Drawers, digit:"+ 80", text: "techniciens télécoms<br>(terrain et bureau d’étude)" },
+        {icon: House, digit:"+ 650 000", text: "Logements raccordés" },
+        {icon: Partners, digit:12, text: "partenaires commerciaux" },
+        {icon: Studies, digit:"+ 18 000", text: "études FTTH confiés" },
+        {icon: Studies, digit:8, text: "ans d’expériences" },
+    ]
+
+    const digits = data.map((el, index)=> {
+        return (
+            <li className="digit__el" key={index}>
+                <img className={'digit__img'}  src={el.icon} alt="drawers"/>
+                <p dangerouslySetInnerHTML={{__html: el.digit}} className={'digit__number'}></p>
+                <p dangerouslySetInnerHTML={{__html: el.text}}></p>
+            </li>
+        )
+    })
+
     return (
         <section className="digit" id={"digit"}>
             <h2>Nos chiffres</h2>
             <ul>
-                <li className="digit__el">
-                    <img className={'digit__img'}  src={Drawers} alt="drawers"/>
-                    <p className={'digit__number'}>19</p>
-                    <p>Dessinateurs</p>
-                </li>
-                <li className="digit__el">
-                    <img className={'digit__img'}  src={House} alt="house"/>
-                    <p className={'digit__number'}>+200 000</p>
-                    <p>Logements cablés</p>
-                </li>
-                <li className="digit__el">
-                    <img className={'digit__img'}  src={Partners} alt="partners"/>
-                    <p className={'digit__number'}>9</p>
-                    <p>Partenaires</p>
-                </li>
-                <li className="digit__el">
-                    <img className={'digit__img'} src={Studies} alt="studies"/>
-                    <p className={'digit__number'}>+11 000</p>
-                    <p>Études</p>
-                </li>
+                {digits}
             </ul>
         </section>
     )

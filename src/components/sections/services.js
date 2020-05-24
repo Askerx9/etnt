@@ -9,12 +9,11 @@ const Services = () => {
     {
       title: "Télécoms Fixes<br>Fibre Optique",
       children: [
-          "Relevés terrain FTTH",
-          "Etudes transport et distribution T + D1 / D2",
-          "Calcul de charges appuis FT & ENEDIS (CAPFT / COMAC)",
-          "Commande d’accès OPGC OWF",
-          "DOE",
-          "Annexe C3A • MAJ EZAPA • DOE",
+          "Relevés terrain FTTH RBAL, Relevé Chambre Souterraine &amp; FOA, Relevé Appui FT / ENEDIS, Visite Technique Immeuble",
+          "Etudes transport et distribution T + D1 / D2 - APS APD",
+          "Calcul de charges appuis FT &amp; ENEDIS (CAPFT / COMAC)",
+          "Commande d’accès OPGC",
+          "DOE"
       ]
     },{
       title: "Télécoms<br>Mobiles",
@@ -58,8 +57,8 @@ const Services = () => {
         <section className="services" id={"services"}>
           <div className="container">
             <div className={"section_title"}>
-              <h2>Services</h2>
-              <p>Lorem Lipsum</p>
+              <h2>nos Services</h2>
+              <p>3 pôles d'expertise </p>
             </div>
 
             <ul className={"services__list"}>

@@ -1,9 +1,11 @@
-import React from "react"
+import React, {Fragment, useState} from "react"
 import Logo from "../images/logo.svg"
-
 import { useStaticQuery, graphql } from "gatsby"
+import Burger from '@animated-burgers/burger-slip'
+import '@animated-burgers/burger-slip/dist/styles.css'
 
 const Nav = () => {
+    const [isOpen, setIsOpen] = useState(false)
   const data = useStaticQuery(graphql`
     query SiteQuery {
       site {
@@ -19,19 +21,23 @@ const Nav = () => {
 
   const menuLinks = data.site.siteMetadata.menuLinks.map((link, index) => (
     <li className={'nav__el'} key={`${index}-link.name`}>
-      <a href={link.link}>
+      <a href={link.link} onClick={() => setIsOpen(!isOpen)}>
         {link.name}
       </a>
     </li>
   ))
 
   return (
-    <nav className={'nav'}>
-         <img src={Logo} alt="Etnt" />
-      <ul>
-        {menuLinks}
-      </ul>
-    </nav>
+      <Fragment>
+
+          <nav className={'nav'}>
+              <img src={Logo} alt="Etnt" />
+              <Burger onClick={() => setIsOpen(!isOpen)} isOpen={ isOpen } Component="button" type="button" />
+              <ul className={isOpen ? 'open' : ''}>
+                  {menuLinks}
+              </ul>
+          </nav>
+      </Fragment>
   )
 }
 

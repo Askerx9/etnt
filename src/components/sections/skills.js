@@ -12,73 +12,37 @@ import userExperience from "../../images/skills/user-experience.png"
 
 const Skills = () => {
 
+  const data = [
+    {icon: software,title: "Logiciel", text: "CAP FT - COMAC - AutoCAD - Géofibre - SISSI - IPON - Q-GSIS - OPTINET - IW3 - NetGEO"},
+    {icon: debitCard,title: "Prix", text: "Partenariat avec des société off-shore = tarifs compétitifs<br /> • Facturation à la tâche<br /> • Délais de paiement"},
+    {icon: quality,title: "Qualité & réactivité", text: "Contrôle-Qualité interne systématique avant livraison<br>Fiche Auto-Contrôle<br>Respect des délais<br>Traitement des urgences <br>Disponibilité 6j/7"},
+    {icon: candidate,title: "Expérience & clé en main", text: "+ de 8 ans d&#39;expériences dans l’activité des télécoms<br>Dessinateurs seniors (+ de 9 ans d&#39;expériences)<br>Divers projets sur l’ensemble du territoire français<br>Solution « clé en main » relevés d’informations terrains + études dans nos bureaux"},
+    {icon: userExperience,title: "Sécurité", text: "Confidentialité des données<br>Sensibilisation interne à la sécurité informatique<br>Audit interne et externe sur notre système d’information<br>Conformité à la norme RGPD"},
+    {icon: calendar,title: "Formation interne", text: "Cellule de formation interne pour garantir les mises à jours d’ingénieries<br>Adaptation aux divers cahiers des charges clients"},
+  ]
+
+  const cards = data.map((el, index) => {
+    console.log(el)
+    return (
+        <li className="skills__el card" key={index}>
+          <img src={el.icon} alt=""/>
+          <div>
+            <p className="bold" dangerouslySetInnerHTML={{__html: el.title}}></p>
+            <p dangerouslySetInnerHTML={{__html: el.text}}></p>
+          </div>
+        </li>
+    )
+  })
+
     return (
         <section className="skills" id={"skills"}>
           <div className="container">
             <div className={"section_title"}>
               <h2>Compétences</h2>
-              <p>Lorem Lipsum</p>
             </div>
 
             <ul>
-              <li className="skills__el card">
-                <img src={software} alt=""/>
-               <div>
-                 <p className="bold">Logiciel</p>
-                 <p>CAP FT - COMAC - AutoCAD - Géofibre - SISSI - IPON - Q-GSIS - OPTINET - IW3 - NetGEO</p>
-               </div>
-              </li>
-              <li className="skills__el card">
-                <img src={debitCard} alt=""/>
-                <div>
-                  <p className="bold">Prix</p>
-                  <p>Partenariat avec des société off-shore = tarifs compétitifs<br />
-                    • Facturation à la tâche<br />
-                    • Délais de paiement
-                  </p>
-                </div>
-              </li>
-              <li className="skills__el card">
-                <img src={quality} alt=""/>
-                <div>
-                  <p className="bold">Qualité</p>
-                  <p>Contrôle-Qualité interne sustématique avant livraison Fiche Auto-Contrôle</p>
-                </div>
-              </li>
-              <li className="skills__el card">
-                <img src={candidate} alt=""/>
-                <div>
-                  <p className="bold">Expérience</p>
-                  <p>+ de 5 ans d'esperiences Dessinateurs expérimentés (+ de 9 ans d'expériences) Polyvalence de projets</p>
-                </div>
-              </li>
-              <li className="skills__el card">
-                <img src={userExperience} alt=""/>
-                <div>
-                  <p className="bold">Sécurité</p>
-                  <p>
-                    Confidentialité<br/>
-                    • Adaptation<br/>
-                    • Equipe jeune<br/>
-                    • Solutions personnalisées<br/>
-                    • Ecoute active
-                  </p>
-                </div>
-              </li>
-              <li className="skills__el card">
-                <img src={calendar} alt=""/>
-                <div>
-                  <p className="bold">Reactivité</p>
-                  <p>Respect des délais
-                    Traitement des urgences
-                    Adaptation aux différentes
-                    exigences clients
-                    Disponibilité 6j/7
-                  </p>
-                </div>
-              </li>
-
-
+              {cards}
             </ul>
           </div>
         </section>

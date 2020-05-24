@@ -5,11 +5,14 @@
   text-align: center;
   font-weight: 600;
   margin-bottom: space(3);
+  @include down(678px) {
+    font-size: em(28,15);
+  }
 }
 
 .title span {
   display: block;
-  font-weight: 400;
+  //font-weight: 400;
 }
 
 .title + p {
@@ -22,6 +25,7 @@
   text-align: right;
   @include flex($direction: column, $align: flex-end);
   display: inline-flex;
+  margin-bottom: space(5);
 
   h2 {
     font-size: em(70, 15);
@@ -29,6 +33,9 @@
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
+    @include down(678px) {
+      font-size: em(30,15);
+    }
     &:before {
       content: "";
       background: url("../../images/title_logo.svg") no-repeat center;
@@ -39,6 +46,10 @@
       left:-60px;
       top: 50%;
       transform: translateY(-50%);
+      @include down(678px) {
+        width: 100px;
+        height: 239px;
+      }
     }
   }
   p {
@@ -47,6 +58,9 @@
     text-transform: lowercase;
     font-weight: 300;
     margin-top: space(-2);
-    margin-bottom: space(5);
+    @include down(678px) {
+      font-size: em(15,15);
+      margin-top: 0;
+    }
   }
 }

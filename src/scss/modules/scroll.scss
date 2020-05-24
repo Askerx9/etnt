@@ -3,8 +3,8 @@
   height: 40px;
   border: 2px solid $white;
   border-radius: 20px;
-  position: absolute;
-  @extend %left-center;
+  position: relative;
+  //@extend %left-center;
   bottom: 20px;
   cursor: pointer;
 }

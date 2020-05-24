@@ -1,16 +1,45 @@
 .nav {
   @extend .container;
   @include flex();
-  @extend %left-center;
-  position: absolute;
+  //@extend %left-center;
+  //position: absolute;
   z-index: 1000;
   color: $white;
-  height: 150px;
+  //height: 150px;
   text-transform: uppercase;
 }
 
 .nav img {
     width: 200px;
+  @include down(678px) {
+    width: 150px;
+  }
+}
+
+.nav ul {
+  @include down(1125px) {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(#51c9eb, 0.9);
+
+    &.open {
+      @include flex(column, center, center);
+    }
+  }
+}
+
+.nav .burger {
+  display: none;
+  background: none;
+  outline: none;
+  z-index: 9999;
+  @include down(1125px) {
+    display: block;
+  }
 }
 
 .nav__el {
@@ -19,6 +48,11 @@
     letter-spacing: 0.15em;
     position: relative;
     border-right: solid 2px currentColor;
+  @include down(1125px) {
+    border: none;
+    margin-bottom: space(1);
+    font-size: 2em;
+  }
 
     &:last-child{
         border-right: none;
@@ -28,6 +62,6 @@
 .nav__el a{
     transition: 0.2s;
     &:hover{
-        color: $primaryColor;
+        color: $contrast;
     }
 }

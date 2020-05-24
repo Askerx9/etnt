@@ -3,7 +3,7 @@
   flex-direction: row-reverse;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: space(10);
+  //padding: space(10);
 }
 
 .partners img {
@@ -12,6 +12,9 @@
   filter: grayscale(100%);
   opacity: .5;
   transition: filter .15s ease-in-out, opacity .15s ease-in-out;
+  @include down(678px) {
+    width: 100px;
+  }
 }
 
 .partners img:hover {

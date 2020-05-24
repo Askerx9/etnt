@@ -5,7 +5,7 @@ module.exports = {
     author: `@predicat`,
     menuLinks: [
       {
-        name: "Presentation",
+        name: "Notre histoire",
         link: "#presentation",
       },
       {

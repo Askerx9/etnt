@@ -11,7 +11,6 @@ const Contact = () => {
           <div className="container">
             <div className={"section_title"}>
               <h2>Contactez-nous</h2>
-              <p>Lorem Lipsum</p>
             </div>
 
             <ul className="info">
