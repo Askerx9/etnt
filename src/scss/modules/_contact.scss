@@ -1,10 +1,11 @@
 .contact{
-  //padding: space(15) 0;
+  margin-bottom: 0;
+  padding: 0 0 space(15) 0;
   background:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%),  url("../../images/map.png") no-repeat center right;
   background-size: auto 150% ;
 
   @include down(678px) {
-    padding-bottom: 300px;
+    padding-bottom: 350px;
     background-position: bottom right;
     background-size: 150% auto;
   }
