@@ -24,9 +24,6 @@ const Timeline = () => {
     const [previous, setPrevious] = useState(0);
     const timelineRef = useRef()
 
-
-
-
     return (
         <section className={"container timeline"} ref={timelineRef}>
 

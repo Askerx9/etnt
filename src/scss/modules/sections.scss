@@ -32,13 +32,13 @@ section {
     margin-bottom: space(2);
 }
 
-.section {
+.fade-in-section {
   transform: translateY(20px);
   opacity: 0;
   transition: transform .3s ease-in-out, opacity .3s ease-in-out;
 }
 
-.section.isVisible {
+.fade-in-section.isVisible {
   transform: translateY(0px);
   opacity: 1;
 }

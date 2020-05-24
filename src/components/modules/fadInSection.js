@@ -1,24 +1,39 @@
 
 import React, {useRef, useEffect} from "react";
-import ScrollMagic from "ScrollMagic";
 
 const FadeInSection = (props) => {
-    const controller = new ScrollMagic.Controller();
-    const domRef = useRef();
+    // const controller = new ScrollMagic.Controller();
+    // const domRef = useRef();
+    //
+    // useEffect(()=>{
+    //   new ScrollMagic.Scene({
+    //     triggerElement: domRef.current,
+    //   })
+    //       .setClassToggle(domRef.current, "isVisible") // pins the element for the the scene's duration
+    //       .addTo(controller); // assign the scene to the controller
+    //
+    //
+    // },[domRef])
 
-    useEffect(()=>{
-      new ScrollMagic.Scene({
-        triggerElement: domRef.current,
-      })
-          .setClassToggle(domRef.current, "isVisible") // pins the element for the the scene's duration
-          .addTo(controller); // assign the scene to the controller
+    const [isVisible, setVisible] = React.useState(false);
+    const domRef = React.useRef();
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.add('fade-in-section')
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('isVisible')
+                }
 
+            });
+        }, {threshold: 0.5});
 
-    },[domRef])
+        observer.observe(domRef.current);
+        return () => observer.unobserve(domRef.current);
+    }, []);
 
     return (
         <div
-            className={`fade-in-section section`}
             ref={domRef}
         >
             {props.children}

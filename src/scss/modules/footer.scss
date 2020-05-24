@@ -3,6 +3,8 @@ footer {
   background: $contrast;
   border-top: 5px solid $primaryColor;
   color: $white;
+  position: relative;
+  z-index: 1000;
 }
 
 footer .container {
