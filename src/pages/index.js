@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useRef} from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,18 +11,34 @@ import Skills from "../components/sections/skills"
 import Partners from "../components/sections/partners";
 import Services from "../components/sections/services";
 import Timeline from "../components/sections/timeline";
+import FadeInSection from "../components/modules/fadInSection";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Presentation />
-    <Timeline />
-    <Services />
-    <Skills />
-    <Digit />
-    <Partners />
-    <Contact />
-  </Layout>
-)
+
+const IndexPage = () =>  (
+        <Layout>
+            <SEO title="Home" />
+            <FadeInSection >
+                <Presentation />
+            </FadeInSection>
+            <FadeInSection >
+                <Timeline />
+            </FadeInSection>
+            <FadeInSection >
+                <Services />
+            </FadeInSection>
+            <FadeInSection >
+                <Skills/>
+            </FadeInSection>
+            <FadeInSection >
+                <Digit/>
+            </FadeInSection>
+            <FadeInSection >
+                <Partners/>
+            </FadeInSection>
+            <FadeInSection >
+                <Contact />
+            </FadeInSection>
+        </Layout>
+    )
 
 export default IndexPage

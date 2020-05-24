@@ -1,7 +1,8 @@
-import React from "react"
+import React, {useEffect, useRef} from "react"
 import ParticlesBackground from "../modules/particlesBackground";
 
-const presentation = () => {
+const Presentation = () => {
+
   return (
     <section className={"section__presentation"} id={"presentation"}>
       <div className={"container"}>
@@ -36,4 +37,4 @@ const presentation = () => {
   )
 }
 
-export default presentation
+export default Presentation

@@ -31,3 +31,14 @@ section {
 .section__presentation_content p {
     margin-bottom: space(2);
 }
+
+.section {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.section.isVisible {
+  transform: translateY(0px);
+  opacity: 1;
+}

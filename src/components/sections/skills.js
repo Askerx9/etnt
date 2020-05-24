@@ -8,6 +8,7 @@ import debitCard from "../../images/skills/debit-card.png"
 import quality from "../../images/skills/quality.png"
 import software from "../../images/skills/software.png"
 import userExperience from "../../images/skills/user-experience.png"
+import padLock from "../../images/skills/padlock.png"
 
 
 const Skills = () => {
@@ -17,12 +18,11 @@ const Skills = () => {
     {icon: debitCard,title: "Prix", text: "Partenariat avec des société off-shore = tarifs compétitifs<br /> • Facturation à la tâche<br /> • Délais de paiement"},
     {icon: quality,title: "Qualité & réactivité", text: "Contrôle-Qualité interne systématique avant livraison<br>Fiche Auto-Contrôle<br>Respect des délais<br>Traitement des urgences <br>Disponibilité 6j/7"},
     {icon: candidate,title: "Expérience & clé en main", text: "+ de 8 ans d&#39;expériences dans l’activité des télécoms<br>Dessinateurs seniors (+ de 9 ans d&#39;expériences)<br>Divers projets sur l’ensemble du territoire français<br>Solution « clé en main » relevés d’informations terrains + études dans nos bureaux"},
-    {icon: userExperience,title: "Sécurité", text: "Confidentialité des données<br>Sensibilisation interne à la sécurité informatique<br>Audit interne et externe sur notre système d’information<br>Conformité à la norme RGPD"},
+    {icon: padLock,title: "Sécurité", text: "Confidentialité des données<br>Sensibilisation interne à la sécurité informatique<br>Audit interne et externe sur notre système d’information<br>Conformité à la norme RGPD"},
     {icon: calendar,title: "Formation interne", text: "Cellule de formation interne pour garantir les mises à jours d’ingénieries<br>Adaptation aux divers cahiers des charges clients"},
   ]
 
   const cards = data.map((el, index) => {
-    console.log(el)
     return (
         <li className="skills__el card" key={index}>
           <img src={el.icon} alt=""/>
