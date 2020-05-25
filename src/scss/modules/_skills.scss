@@ -6,12 +6,13 @@
 
 .skills__el {
   //flex-basis: 28%;
+  width: 400px;
   display: flex;
   align-items: center;
   justify-content: start;
 
-  @include down(768) {
-    flex-basis: 100%;
+  @include down(1000) {
+    width: 100%;
   }
 
 }
