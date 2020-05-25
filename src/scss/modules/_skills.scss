@@ -6,17 +6,22 @@
 
 .skills__el {
   //flex-basis: 28%;
-  width: 400px;
+  width: 450px;
   display: flex;
   align-items: center;
   justify-content: start;
 
-  @include down(1000) {
+  @include down(1120) {
     width: 100%;
   }
 
 }
-
+.skills__el p {
+  width: 290px;
+  @include down(1120) {
+    width: inherit;
+  }
+}
 .skills__el p + p {
   font-size: .8em;
   color: rgb(118, 118, 118);
