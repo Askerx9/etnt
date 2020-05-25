@@ -19,13 +19,13 @@
 }
 
 .partners a {
-  height: 70px;
+  width: 300px;
   margin: space(2) space(9);
   filter: grayscale(100%);
   opacity: .5;
   transition: filter .15s ease-in-out, opacity .15s ease-in-out;
   @include down(678px) {
-    width: 100px;
+    width: 150px;
     margin: space(2) 0;
   }
 }
@@ -36,5 +36,6 @@
 }
 
 .partners a img {
-  height: 100%;
+  width: 100%;
+  //width: auto;
 }

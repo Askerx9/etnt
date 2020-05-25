@@ -6,7 +6,7 @@
   font-weight: 600;
   margin-bottom: space(3);
   @include down(678px) {
-    font-size: em(28,15);
+    font-size: em(35,15);
   }
 }
 
@@ -49,6 +49,7 @@
       @include down(678px) {
         width: 100px;
         height: 239px;
+        left: 0px;
       }
     }
   }

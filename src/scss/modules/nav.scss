@@ -25,7 +25,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(#51c9eb, 0.9);
+    background: rgba($contrast, 0.9);
 
     &.open {
       @include flex(column, center, center);
@@ -51,7 +51,7 @@
     border-right: solid 2px currentColor;
   @include down(1125px) {
     border: none;
-    margin-bottom: space(1);
+    margin-bottom: space(2);
     font-size: 2em;
   }
 
@@ -63,6 +63,6 @@
 .nav__el a{
     transition: 0.2s;
     &:hover{
-        color: $contrast;
+        color: $primaryColor;
     }
 }
