@@ -12,6 +12,7 @@
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: space(5);
+
   @include down(678px) {
     font-size: em(28, 15);
   }
@@ -21,6 +22,9 @@
   @include flex();
   @extend .container;
   flex-wrap: wrap;
+  @include down(1060px) {
+    justify-content: space-around;
+  }
   @include down(678px) {
     flex-direction: column;
   }
@@ -30,8 +34,8 @@
   color: $white;
   text-align: center;
   text-transform: uppercase;
-  @include down(678px) {
-    margin-bottom: space(3);
+  @include down(1060px) {
+    margin: space(3) space(5);
   }
 }
 

@@ -5,8 +5,12 @@ const FadeInSection = (props) => {
     const domRef = React.useRef();
 
     React.useEffect(() => {
+        const isIE = /*@cc_on!@*/false || !!document.documentMode;
         let width = window.innerWidth;
         window.addEventListener('resize', () => {width = window.innerWidth})
+        if(isIE) {
+            return
+        }
         if(IntersectionObserver !== undefined && width > 678) {
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {

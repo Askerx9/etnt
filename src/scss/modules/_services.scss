@@ -13,6 +13,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @include down(1050) {
+    justify-content: space-around;
+  }
 }
 
 .services__el {
