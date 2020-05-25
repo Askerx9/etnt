@@ -5,7 +5,7 @@ section {
 
 .section__header{
   @include flex($direction: column, $justify: space-around );
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   background:rgba(7, 37, 60, 0.45);
@@ -19,7 +19,7 @@ section {
 }
 
 .section__presentation img{
-  min-width: 500px;
+  width: 500px;
   justify-self: left;
   margin: 0 auto;
   opacity: .8;
