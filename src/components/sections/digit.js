@@ -6,6 +6,7 @@ import Drawers from '../../images/digits/drawers.svg'
 import House from '../../images/digits/house.svg'
 import Partners from '../../images/digits/partners.svg'
 import Studies from '../../images/digits/studies.svg'
+import Times from '../../images/digits/time.svg'
 
 const Digit = () => {
 
@@ -14,7 +15,7 @@ const Digit = () => {
         {icon: House, digit:"+ 650 000", text: "Logements raccordés" },
         {icon: Partners, digit:12, text: "partenaires commerciaux" },
         {icon: Studies, digit:"+ 18 000", text: "études FTTH confiés" },
-        {icon: Studies, digit:8, text: "ans d’expériences" },
+        {icon: Times, digit:8, text: "ans d’expériences" },
     ]
 
     const digits = data.map((el, index)=> {

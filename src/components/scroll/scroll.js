@@ -1,10 +1,10 @@
 import React from 'react'
+import ScrollToRef from "./ScrollToRef";
 
 const Scroll = () => {
 
-
   return (
-    <div className="scroll">
+    <div className="scroll" onClick={(e) => ScrollToRef(e,'#presentation')}>
 
     </div>
   )

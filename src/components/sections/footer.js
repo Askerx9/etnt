@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollToRef from "../scroll/ScrollToRef";
 
 
 // Assets
@@ -23,7 +24,7 @@ const Footer = () => {
 
   const menuLinks = data.site.siteMetadata.menuLinks.map((link, index) => (
       <li key={`${index}-link.name`}>
-        <a href={link.link}>
+        <a href={link.link} onClick={(e) => ScrollToRef(e, link.link)}>
           {link.name}
         </a>
       </li>
@@ -32,7 +33,7 @@ const Footer = () => {
   return (
     <footer>
       <div className={'container'}>
-        <button className={'footer__return-to-top'}>return</button>
+        <button className={'footer__return-to-top'} onClick={(e) => ScrollToRef(e,'header')}>return</button>
         <img className={'footer__logo'} src={Logo} alt="Etnt" />
 
         <ul className={'footer__nav'}>
@@ -45,10 +46,10 @@ const Footer = () => {
 
         <ul className={'social'}>
           <li className={'social__el social__el--fb'}>
-            <a href="#">Facebook</a>
+            <a href="#" target={"_BLANK"}>Facebook</a>
           </li>
           <li className={'social__el social__el--in'}>
-            <a href="#">Linkedin</a>
+            <a href="https://www.linkedin.com/company/etnt/" target={"_BLANK"}>Linkedin</a>
           </li>
         </ul>
       </div>

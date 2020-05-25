@@ -3,6 +3,7 @@ import Logo from "../images/logo.svg"
 import { useStaticQuery, graphql } from "gatsby"
 import Burger from '@animated-burgers/burger-slip'
 import '@animated-burgers/burger-slip/dist/styles.css'
+import ScrollToRef from "./scroll/ScrollToRef";
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +22,10 @@ const Nav = () => {
 
   const menuLinks = data.site.siteMetadata.menuLinks.map((link, index) => (
     <li className={'nav__el'} key={`${index}-link.name`}>
-      <a href={link.link} onClick={() => setIsOpen(!isOpen)}>
+      <a href={link.link} onClick={(e) => {
+          setIsOpen(!isOpen)
+          ScrollToRef(e, link.link)
+      }}>
         {link.name}
       </a>
     </li>
