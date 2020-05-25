@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React, {useRef, useState} from 'react'
 import HorizontalTimeline from 'react-horizontal-timeline';
 
 // Assets
@@ -15,7 +15,7 @@ const Timeline = () => {
         {date: "2016" ,title: "Lancement sur le projet calcul de charges des appuis FT & ENEDIS", text: 'Réalisation d’études CAPFT & COMAC pour le déploiement de la fibre optique en aérien sur les appuis FT et ENEDIS.'},
         {date: "2017" ,title: "Ouverture de 3 nouveaux bureaux d’études", text: '3 bureaux d’études ouvert dans les villes de Tanger, Asilah et Témara. <br> Effectif Global: 21 personnes'},
         {date: "2018" ,title: "Déploiement de la fibre optique sur l’ensemble du territoire français", text: 'Réalisation d’études FTTH sur le plan national'},
-        {date: "2019" ,title: "Nouveaux actionnaires et augmentation des effectifs à 83 personnes", text: 'Intégration de nouveaux investisseurs et acquisition de plus grand locaux pour répondre à la demande croissante de nos partenaires.'},
+        {date: "2019" ,title: "Nouveaux actionnaires et augmentation des effectifs à 83 personnes", text: 'Intégration de nouveaux investisseurs et acquisition de plus grands locaux pour répondre à la demande croissante de nos partenaires.'},
         {date: "2020" ,title: "Concrétisation du projet ETNT « CLÉ EN MAIN » & « SMART CITIES »", text: 'ETNT propose actuellement à ses clients des solutions « clé en main » allant du piquetage terrain en passant par les études réalisées dans nos bureaux jusqu’au dépôt des dossiers d’ouvrages exécuté DOE auprès du client. <br> Diversification de notre secteur d’activité : mobile &amp; smart cities'},
     ]
     const dates = values.map(el => el.date)

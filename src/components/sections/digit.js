@@ -1,21 +1,19 @@
 import React from 'react'
-
-
 // Assets
-import Drawers from '../../images/digits/drawers.svg'
+import techniciens from '../../images/digits/techniciens.svg'
 import House from '../../images/digits/house.svg'
 import Partners from '../../images/digits/partners.svg'
 import Studies from '../../images/digits/studies.svg'
-import Times from '../../images/digits/time.svg'
+import experience from '../../images/digits/experience.svg'
 
 const Digit = () => {
 
     const data = [
-        {icon: Drawers, digit:"+ 80", text: "techniciens télécoms<br>(terrain et bureau d’étude)" },
+        {icon: techniciens, digit:"+ 80", text: "techniciens télécoms<br>(terrain et bureau d’étude)" },
         {icon: House, digit:"+ 650 000", text: "Logements raccordés" },
         {icon: Partners, digit:12, text: "partenaires commerciaux" },
         {icon: Studies, digit:"+ 18 000", text: "études FTTH confiées" },
-        {icon: Times, digit:8, text: "ans d’expériences" },
+        {icon: experience, digit:8, text: "ans d’expériences" },
     ]
 
     const digits = data.map((el, index)=> {

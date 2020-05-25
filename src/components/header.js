@@ -2,8 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Nav from "./nav"
 import Scroll from "./scroll/scroll";
-import Bgmp4 from "../videos/bg.mp4";
-
+import Bgmp4 from "../videos/shutterstock_1025765096.mp4";
 
 
 const Header = ({ siteTitle }) => {

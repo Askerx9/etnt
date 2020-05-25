@@ -5,13 +5,16 @@
   text-align: center;
 }
 
-.digit h2 {
+.digit h2, %sectionH2 {
   color: $white;
   opacity: .4;
-  font-size: em(70, 15);
+  font-size: em(50, 15);
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: space(5);
+  @include down(678px) {
+    font-size: em(28, 15);
+  }
 }
 
 .digit ul{

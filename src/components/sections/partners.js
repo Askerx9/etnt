@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 // Assets
 import circet from "../../images/partners/Logo-Circet.png"
 import Axians from "../../images/partners/Logo-Axians.png"
@@ -9,8 +7,6 @@ import Eiffage from "../../images/partners/Logo-Eiffage.png"
 import Engie from "../../images/partners/Logo-Engie.png"
 import Scopelec from "../../images/partners/Logo-Scopelec.png"
 import Spie from "../../images/partners/Logo-Spie.png"
-import ParticlesBackground from "../modules/particlesBackground";
-
 
 
 const Partners = () => {
@@ -38,7 +34,10 @@ const Partners = () => {
 
     return (
         <section className="partners">
-            {partnersElements}
+            <h2>Ils nous ont fait confiance</h2>
+            <div>
+                {partnersElements}
+            </div>
         </section>
     )
 }

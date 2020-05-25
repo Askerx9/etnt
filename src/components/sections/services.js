@@ -7,24 +7,25 @@ import ParticlesBackground from "../modules/particlesBackground";
 const Services = () => {
 
   const services = [
+      {
+          title: "Télécoms<br>Mobiles",
+          children: [
+              "Déclaration Préalable (DP)",
+              "Dossier d'Information Mairie (DIM)",
+              "Avant-Projet Simplifié (APS) Avant-Projet Détaillé (APD)",
+              "Note de calcul de charges pylône",
+              "Dossier COMSIS",
+              "DOE (Reportages photos - fiche accès)",
+          ]
+      },
     {
       title: "Télécoms Fixes<br>Fibres Optiques",
       children: [
-          "Relevés terrain FTTH RBAL, Relevé Chambre Souterraine &amp; FOA, Relevé Appui FT / ENEDIS, Visite Technique Immeuble",
+          "Relevés terrain FTTH<br> RBAL / Relevé Chambre Souterraine &amp; FOA / Aiguillage<br> Relevé Appui FT / ENEDIS<br> Visite Technique Immeuble",
           "Etude transport et distribution T + D1 / D2 - APS APD",
           "Calcul de charges appuis FT &amp; ENEDIS (CAPFT / COMAC)",
           "Commande d’accès OPGC",
           "DOE"
-      ]
-    },{
-      title: "Télécoms<br>Mobiles",
-      children: [
-          "Déclaration Préalable (DP)",
-          "Dossier d'Information Mairie (DIM)",
-          "Avant-Projet Simplifié (APS) Avant-Projet Détaillé (APD)",
-          "Note de calcul de charges pylône",
-          "Dossier COMSIS",
-          "DOE (Reportages photos - fiche accès)",
       ]
     },{
       title: "Smarts<br>Cities",
@@ -59,7 +60,7 @@ const Services = () => {
           <div className="container">
             <div className={"section_title"}>
               <h2>nos Services</h2>
-              <p>3 pôles d'expertise </p>
+              <p>3 pôles d'expertises </p>
             </div>
 
             <ul className={"services__list"}>

@@ -1,7 +1,5 @@
 import React from 'react'
 import ScrollToRef from "../scroll/ScrollToRef";
-
-
 // Assets
 import Logo from "../../images/logo.svg"
 import {graphql, useStaticQuery} from "gatsby";
@@ -45,9 +43,6 @@ const Footer = () => {
         </p>
 
         <ul className={'social'}>
-          <li className={'social__el social__el--fb'}>
-            <a href="#" target={"_BLANK"}>Facebook</a>
-          </li>
           <li className={'social__el social__el--in'}>
             <a href="https://www.linkedin.com/company/etnt/" target={"_BLANK"}>Linkedin</a>
           </li>
