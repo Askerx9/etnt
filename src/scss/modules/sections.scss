@@ -9,26 +9,42 @@ section {
   overflow: hidden;
   position: relative;
   background:rgba(7, 37, 60, 0.45);
-  //margin-bottom: space(8);
-
-  // background-image: linear-gradient(transparent 70% , $white 90%);
 }
 
 .section__presentation{
   font-size: em(16, 15);
-  padding: space(12) 0 space(8);
+  padding: space(12) 0 space(3);
   position: relative;
   overflow: hidden;
 }
 
-.section__presentation_content {
-  width: 35%;
-
-  @include down(678px) {
-    width: 100%;
+.section__presentation img{
+  min-width: 500px;
+  justify-self: left;
+  margin: 0 auto;
+  @include down(1050px) {
+    width: 60%;
+    min-width: 288px;
   }
-
 }
+
+.section__presentation .container{
+  @include flex(row, center, start  );
+  @include down(1050px) {
+    @include flex(column, center, start  )
+  }
+}
+
+.section__presentation .container > div{
+  width: 50%;
+  min-width: 288px;
+  @include down(1050px) {
+    width: 100%;
+    margin-bottom: space(2);
+  }
+}
+
+
 .section__presentation_content p {
     margin-bottom: space(2);
 }
