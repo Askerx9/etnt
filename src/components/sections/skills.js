@@ -14,8 +14,8 @@ import padLock from "../../images/skills/padlock.png"
 const Skills = () => {
 
   const data = [
-    {icon: software,title: "Logiciel", text: "CAP FT - COMAC - AutoCAD - Géofibre - SISSI - IPON - Q-GSIS - OPTINET - IW3 - NetGEO"},
-    {icon: debitCard,title: "Prix", text: "Partenariat avec des société off-shore = tarifs compétitifs<br /> • Facturation à la tâche<br /> • Délais de paiement"},
+    {icon: software,title: "Logiciels", text: "CAP FT - COMAC - AutoCAD - Géofibre - IPON - Q-GSIS - OPTINET - IW3 - NetGEO - REFSITES – ARCGIS"},
+    {icon: debitCard,title: "Prix", text: "• Facturation à la tâche<br /> • Délais de paiement <br> • Tarifs compétitifs "},
     {icon: quality,title: "Qualité & réactivité", text: "Contrôle-Qualité interne systématique avant livraison<br>Fiche Auto-Contrôle<br>Respect des délais<br>Traitement des urgences <br>Disponibilité 6j/7"},
     {icon: candidate,title: "Expérience & clé en main", text: "+ de 8 ans d&#39;expériences dans l’activité des télécoms<br>Dessinateurs seniors (+ de 9 ans d&#39;expériences)<br>Divers projets sur l’ensemble du territoire français<br>Solution « clé en main » relevés d’informations terrains + études dans nos bureaux"},
     {icon: padLock,title: "Sécurité", text: "Confidentialité des données<br>Sensibilisation interne à la sécurité informatique<br>Audit interne et externe sur notre système d’information<br>Conformité à la norme RGPD"},

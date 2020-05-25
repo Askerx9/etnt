@@ -8,10 +8,10 @@ const Services = () => {
 
   const services = [
     {
-      title: "Télécoms Fixes<br>Fibre Optique",
+      title: "Télécoms Fixes<br>Fibres Optiques",
       children: [
           "Relevés terrain FTTH RBAL, Relevé Chambre Souterraine &amp; FOA, Relevé Appui FT / ENEDIS, Visite Technique Immeuble",
-          "Etudes transport et distribution T + D1 / D2 - APS APD",
+          "Etude transport et distribution T + D1 / D2 - APS APD",
           "Calcul de charges appuis FT &amp; ENEDIS (CAPFT / COMAC)",
           "Commande d’accès OPGC",
           "DOE"
@@ -27,7 +27,7 @@ const Services = () => {
           "DOE (Reportages photos - fiche accès)",
       ]
     },{
-      title: "Smart<br>City",
+      title: "Smarts<br>Cities",
       children: [
           "Energies renouvelables",
           "Boitier intelligent",
@@ -40,7 +40,7 @@ const Services = () => {
 
     const children = service.children.map((child, index) => {
       return (
-          <li className={"children__el"} key={index}> {child }</li>
+          <li className={"children__el"} key={index} dangerouslySetInnerHTML={{__html: child}}></li>
       )
     })
 

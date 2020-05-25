@@ -14,7 +14,7 @@ const Digit = () => {
         {icon: Drawers, digit:"+ 80", text: "techniciens télécoms<br>(terrain et bureau d’étude)" },
         {icon: House, digit:"+ 650 000", text: "Logements raccordés" },
         {icon: Partners, digit:12, text: "partenaires commerciaux" },
-        {icon: Studies, digit:"+ 18 000", text: "études FTTH confiés" },
+        {icon: Studies, digit:"+ 18 000", text: "études FTTH confiées" },
         {icon: Times, digit:8, text: "ans d’expériences" },
     ]
 

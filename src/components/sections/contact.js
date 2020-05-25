@@ -27,6 +27,7 @@ const Contact = () => {
                   PAVILLON INTERNATIONAL 504<br/>
                   9000 TANGER - MAROC<br/>
                 </p>
+                  <p>cem@etnt-group.com</p>
               </li>
 
               <li className="info__el">

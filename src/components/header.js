@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => {
         <h1 className={'title'}>
           Études télécoms <span className={"colored"}>nouvelles technologies</span>
         </h1>
-        <p>Votre solution très haut débit</p>
+        <p>Votre Solution Très Haut Débit</p>
       </div>
 
       <Scroll />
