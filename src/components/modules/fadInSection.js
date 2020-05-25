@@ -3,11 +3,10 @@ import React from "react";
 const FadeInSection = (props) => {
 
     const domRef = React.useRef();
-    let width = window.innerWidth;
 
-    window.addEventListener('resize', () => {width = window.innerWidth})
     React.useEffect(() => {
-
+        let width = window.innerWidth;
+        window.addEventListener('resize', () => {width = window.innerWidth})
         if(IntersectionObserver !== undefined && width > 678) {
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
