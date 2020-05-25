@@ -19,8 +19,8 @@ const Presentation = () => {
               de fibre optique FTTH en France.
             </p>
             <p>
-              Bureau d’étude, spécialisé en ingénierie télécom, reconnu depuis plusieurs années passées
-              au service de grands groupes français leader sur ce marché.
+              Bureau d’études, spécialisé en ingénierie télécom, reconnu depuis plusieurs années passées
+              au service de grands groupes français leaders sur ce marché.
             </p>
             <p>
               Aujourd’hui, à travers notre équipe soudée d’hommes et de femmes, notre société
