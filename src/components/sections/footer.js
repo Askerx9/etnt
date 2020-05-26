@@ -44,7 +44,7 @@ const Footer = () => {
 
         <ul className={'social'}>
           <li className={'social__el social__el--in'}>
-            <a href="https://www.linkedin.com/company/etnt/" target={"_BLANK"}>Linkedin</a>
+            <a href="https://www.linkedin.com/company/etnt/" rel="noreferrer" target={"_BLANK"}>Linkedin</a>
           </li>
         </ul>
       </div>

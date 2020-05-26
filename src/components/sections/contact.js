@@ -25,7 +25,7 @@ const Contact = () => {
                 <p>
                   BOULEVARD MOHAMED V<br/>
                   PAVILLON INTERNATIONAL 504<br/>
-                  9000 TANGER - MAROC<br/>
+                  90000 TANGER - MAROC<br/>
                 </p>
               </li>
 

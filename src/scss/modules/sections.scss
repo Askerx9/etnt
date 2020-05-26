@@ -16,6 +16,7 @@ section {
   padding: space(12) 0 space(3);
   position: relative;
   overflow: hidden;
+
 }
 
 .section__presentation img{
@@ -48,6 +49,7 @@ section {
 
 .section__presentation_content p {
     margin-bottom: space(2);
+  text-align: justify;
 }
 
 .fade-in-section {
