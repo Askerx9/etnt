@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `ETNT entreprise`,
-    description: `VOTRE SOLUTION TRÈS HAUT DÉBIT`,
+    description: `ETNT est un bureau d’études spécialisée dans le domaine d'ingénieries télécoms de la fibre optique FTTH`,
     author: `@predicat`,
     menuLinks: [
       {
